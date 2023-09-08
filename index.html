@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Activity 3 - HTML Mastery with Git</title>
+
+    <style>
+        footer 
+        {
+            text-align: center;
+            padding: 3px;
+            background-color: DarkSalmon;
+            color: white;
+        }
+        </style>
 </head>
 <body>
+
     <!-- Header Section -->
     <header>
-        <section>
+        <section id="Home">
             <div>
                 <h1>Activity 3 - HTML Mastery with Git</h1>
             </div>
@@ -17,81 +29,109 @@
     <!-- End of Header Section -->
 
     <hr>
-    <br>
 
     <!-- Navigation Section -->
     <nav>
-        <section>
             <div>
-                <h2>Home</h2>
+                <p><a href="#Home">Home</a> | <a href="#About">About</a> | <a href="#Contact">Contact</a></p>
             </div>
-        </section>
     </nav>
     <!-- End of Navigation Section -->
 
-    <br>
-    <br>
     <hr>
 
-    <!-- Contact Section -->
-    <main>
-        <section>
-            <form action="">
-                <section>
+    <!-- Code for about section -->
+    <article id="About">  
+            <h2><u>About</u></h2>
+            <!-- Code for image -->
+            <div>
+                <p>This is the face of a <strong>Developer</strong> when he/she debug the problem.</p>
+                <img src="ImagesAndVideos/Monkeysmiling.jpg" 
+                alt="Monkeysmilling" width="400" height="385">
+            </div> 
+
+            <br>
+
+            <p>This video shows when a <strong>Developer</strong> can't debug the problem. </p>
+            <!-- Code for video -->
+            <div>
+                <video width="400" controls>
+                    <source src="ImagesAndVideos/BigBuckBunny.mp4" type="video/mp4">
+                    <source src="ImagesAndVideos/BigBuckBunny.mp4" type="video/ogg">
+                </video>
+            </div>
+    </article>
+    <!-- End Code for about section -->
+    
+    <hr>
+
+        <!-- Contact Section -->
+        <main>
+            <section id="Contact">
+                <h2><u>Contact</u></h2>
+                <form>
+                    
+                    <!-- Code for name textbox -->
                     <div>
-                        <p><strong>Contact</strong></p>
+                        <label for="fullname"><b>Full Name:</b></label>
+                        <input 
+                        id="fullname" 
+                        type="text" 
+                        placeholder="Ex. Jordan Datiun"
+                        required>
                     </div>
-                </section>
-                <!-- Code for name textbox -->
-                <div>
-                    <label for="fullname">Full Name:</label>
-                    <input 
-                    id="fullname" 
-                    type="text" 
-                    placeholder="Ex. Jordan Datiun"
-                    required>
-                </div>
-                <!-- End Code for name textbox -->
+                    <!-- End Code for name textbox -->
+    
+                    <br>
+    
+                    <!-- Code for name Email textbox -->
+                    <div>
+                        <label for="email"><b>Your Email:</b></label>
+                        <input
+                        id="email"
+                        type="email"
+                        placeholder="Ex. MyEmail@gmail.com"
+                        required>
+                    </div>
+                    <!-- End Code for name Email textbox -->
+    
+                    <br>
+    
+                    <!-- Code for name Message textbox -->
+                    <div>
+                        <p><label for="message"><b>Your Message:</b></label></p>
+                        <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Please type your message here."
+                        rows="4"
+                        cols="50"
+                        required
+                        ></textarea>
+                    </div>
+                    <!-- End Code for name Message textbox -->
+    
+                    <br>
+    
+                    <!-- Code for submit and reset buton -->
+                    <div>
+                        <button type="reset">Reset</button>
+                        <button type="submit">Submit</button>
+                    </div>
+                    <!-- End Code for submit and reset buton -->
+                </form>
+            </section>
+        </main>
+        <!-- End of Contact Section -->
 
-                <br>
+    <hr>
 
-                <!-- Code for name Email textbox -->
-                <div>
-                    <label for="email">Your Email:</label>
-                    <input
-                    id="email"
-                    type="email"
-                    placeholder="Ex. MyEmail@gmail.com"
-                    required>
-                </div>
-                <!-- End Code for name Email textbox -->
-
-                <br>
-
-                <!-- Code for name Message textbox -->
-                <div>
-                    <p><label for="message">Your Message:</label></p>
-                    <textarea
-                    id="message"
-                    name="message"
-                    rows="4"
-                    cols="50"
-                    required
-                    ></textarea>
-                </div>
-                <!-- End Code for name Message textbox -->
-
-                <br>
-
-                <!-- Code for submit and reset buton -->
-                <div>
-                    <button type="reset">Reset</button>
-                    <button type="submit">Submit</button>
-                </div>
-                <!-- End Code for submit and reset buton -->
-            </form>
-        </section>
-    </main>
-    <!-- End of Contact Section -->
+    <!-- Code for footer section -->
+    <footer>
+        <div>
+            © Copyright September 08, 2023, Melchisideck Jordan U. Datuin Activity 3.
+        </div>
+    </footer>
+    
 </body>
 </html>
